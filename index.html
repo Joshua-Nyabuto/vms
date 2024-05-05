@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Church web</title>
+    <style>
+        .title {
+            display: grid;
+            grid-template-columns: 1fr 3fr  1fr;
+            background-color: white;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 10px;
+            color: red;
+
+        }
+        .home-section {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            grid-gap: 10px;
+        }
+        .announcement-section {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            grid-gap: 10px;
+        }
+        .announcement-board{
+        	 display: grid;
+            grid-template-columns: 3fr 1fr;
+            height: 400px;
+             margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            grid-gap: 10px;
+           
+
+        }
+       .program{
+       	display: grid;
+       	grid-template-rows: auto auto auto auto;
+
+       }
+       .speaker{
+       	display: grid;
+       	grid-template-columns: auto auto;
+       }
+       .speaker-img{
+			width: 100px;
+			
+			border-radius: 50px;
+			display: inline-block;
+			vertical-align: top;
+			
+			
+		}
+        .home-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+        .leaders {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            margin-top: 20px;
+            height: 200px;
+        }
+        .image1 {
+            width: 50px;
+            margin-top: 8px;
+            border-radius: 50px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+        }
+.image2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0px;
+}
+.image3  {
+   width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0px;
+    transition: transform 0.15s ease;
+}
+        .logo {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            color: blue;
+        }
+        .links a:not(:last-child) {
+          margin-right: 20px; /* Adjust the spacing as needed */
+
+}
+
+        .head {
+            display: grid;
+            grid-template-rows: auto auto;
+            margin-left: 20px;
+            padding-bottom: 0px;
+        }
+        /* Animation for moving text */
+        .moving-text {
+            animation: moveText 15s linear infinite; /* Adjust the duration and timing function as needed */
+            white-space: nowrap; /* Prevent text from wrapping */
+            font-size: 20px;
+        }
+        @keyframes moveText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="title" style="background-color: blue">
+    <div class="logo" style="background-color: white">
+        <div style="background-color: green">
+            <img class="image1" src="images/sda.png">
+        </div>
+        <div style="background-color: white">
+            <p>NYABIORE CENTRAL SDA CHURCH</p>
+        </div>
+    </div>
+
+    <div class="head" style="background-color: lightpink; display: grid; align-content: end;">
+        <div class="links">
+            <p>
+                <a style="color: black;" href="#home"> Home </a>
+                <a style="color: black;" href="#about"> Church History</a>
+                <a style="color: black;" href="#belief"> Leadership</a>
+                <a style="color: black;" href="#announcement"> Announcement</a>
+                <a style="color: black;" href="#contacts"> Contact us</a>
+                <a style="color: black;" href="#announcement"> Location</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="logo" style="background-color: white">
+        <div>
+        	<a href="https://www.youtube.com/results?search_query=nyabiore+central+sda+choir+" target="_blank">
+            <img class="image1" src="images/youtube.jpg">
+        </a>
+        </div>
+        <div>
+        	<a href="#" target="_blank">
+            <img class="image1" src="images/fb icon.jpg">
+        </a>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="home-section" id="home" style="margin-bottom: 20px;">
+    <div style="background-color: lightblue;">
+        <img class="image3" id="slidingImage" src="images/img1.png">
+    </div>
+    <div style="background-color: lightgreen;">
+        <img class="image2" src="images/publ.png">
+    </div>
+</div>
+
+    <div class="announcement-board" id="about">
+        <div style="background-color: lightblue">
+            <strong style="color: yellow; background-color: grey; text-align: center; margin-left: 20px; font-size: 22px"> NYABIORE CENTRAL SEVENTH DAY ADVENTIST CHURCH NEWSBORD</strong>
+            
+            <p style="color: red; background-color: white" >
+            1. On 11/05/2024 church to be held at Bendera Camp Center.<br>
+            2. Reminder Come with the project money as we agreed on 04/05/2024.
+
+
+            </p>
+           
+        </div>
+       
+        <div style="background-color: white;" class="program" >
+        	<div style="background-color: black;">
+        	<strong style="color: white"> SABBATH SERMON PROGRAM <br>
+        		ADVENTIST MEN ORGANIZATION SABBATH(AMO)
+        	<P> DATE: 11/05/2024</P>
+        	</strong>
+        	</div>
+        	<div  class="speaker">
+        		
+        	<div>
+        		<img class="speaker-img" src="images/speaker.png">
+        	</div>
+        	<div>
+        	<strong style="color: yellow; background-color: grey"> SPEAKER: Eld. Nathan Aminga <br>
+        		TOPIC: Trust and Prayer<br>
+        		KEY VERSE: Psalms 131:1<br>
+        		KEY SONG: (Ekegusii 133)<br>
+
+
+
+        		<p style="color: blue">
+        			Loard, i have given up my pride and turned away from my arrogance. i am not concerned with great matters or with subjects too difficult for me.
+        			
+        		</p>
+        	 </strong>
+        	</div>
+        	</div>
+        	<div style="background-color: grey">
+        		<img class="image1" src="images/sda.png"> 
+        		<img class="image1" src="images/sda.png"> 
+        		<img class="image1" src="images/sda.png"> 
+        		<img class="image1" src="images/sda.png"> 
+        		</div>
+        		
+        
+        </div>
+        
+    </div>
+
+    <div class="home-section" id="belief">
+        <div style="background-color: lightblue;">
+           Church History
+        </div>
+        <div style="background-color: lightgreen;">
+            Belief Sidebar
+        </div>
+    </div>
+
+    <div class="home-section" id="announcement">
+        <div style="background-color: lightblue;">
+            Leaders
+        </div>
+        <div style="background-color: lightgreen;">
+            Announcement Sidebar
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling when clicking on links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+         let slidingImage = document.getElementById('slidingImage');
+    let slideIndex = 0;
+    let images = [ 'images/img2.png', 'images/img3.png', 'images/testy.png' , 'images/img8.jpg', 'images/img4.jpg']; 
+    function slideImage() {
+        slideIndex = (slideIndex + 1) % images.length;
+        slidingImage.src = images[slideIndex];
+    }
+
+    setInterval(slideImage, 5000); 
+
+    </script>
+
+</body>
+</html>
